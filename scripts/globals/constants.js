@@ -85,6 +85,7 @@ export const FEATURES = {
       ARM_NIGHT: 4,
       TRIGGER: 8,
       ARM_CUSTOM_BYPASS: 16,
+      ARM_VACATION: 32,
    },
    LIGHT: {
       // https://github.com/home-assistant/core/blob/dev/homeassistant/components/light/__init__.py

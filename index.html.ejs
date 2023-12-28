@@ -176,6 +176,16 @@
                     ng-click="actionAlarm('alarm_arm_night', activeAlarm, alarmEntity)">
                   <div class="mdi mdi-sleep"></div> Arm night
                </div>
+               <div class="alarm-popup-button -icon -custom"
+                    ng-if="supportsFeature(FEATURES.ALARM.ARM_CUSTOM_BYPASS, alarmEntity) && alarmEntity.state === 'disarmed'"
+                    ng-click="actionAlarm('alarm_arm_custom_bypass', activeAlarm, alarmEntity)">
+                  <div class="mdi mdi-account"></div> Arm custom
+               </div>
+               <div class="alarm-popup-button -icon -vacation"
+                    ng-if="supportsFeature(FEATURES.ALARM.ARM_VACATION, alarmEntity) && alarmEntity.state === 'disarmed'"
+                    ng-click="actionAlarm('alarm_arm_vacation', activeAlarm, alarmEntity)">
+                  <div class="mdi mdi-bed"></div> Arm vacation
+               </div>
                <div class="alarm-popup-button -icon -disarm"
                     ng-if="alarmEntity.state !== 'disarmed'"
                     ng-click="actionAlarm('alarm_disarm', activeAlarm, alarmEntity)">

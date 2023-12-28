@@ -18,6 +18,7 @@ Here are some real life examples of Tiles.<br>
       armed_home: 'mdi-bell-plus',
       armed_night: 'mdi-bell-sleep',
       armed_away: 'mdi-bell',
+      armed_vacation: 'mdi-bell-badge',
       triggered: 'mdi-bell-ring'
    },
    states: {
@@ -28,6 +29,7 @@ Here are some real life examples of Tiles.<br>
       armed_home: 'Armed (home)',
       armed_night: 'Armed (night)',
       armed_away: 'Armed (away)',
+      armed_vacation: 'Armed (vacation)',
       triggered: 'Triggered'
    }
 }
